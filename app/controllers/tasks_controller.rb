@@ -17,6 +17,7 @@ class TasksController < ApplicationController
       redirect_to @tasks, notice: "タスク「#{@task.name}」を登録しました。"
     else
       render :new
+    end
   end
 
   def edit
